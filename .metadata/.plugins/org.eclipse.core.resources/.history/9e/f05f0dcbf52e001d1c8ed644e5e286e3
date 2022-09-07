@@ -6,8 +6,6 @@ import org.testng.annotations.Test;
 import calculator.StringCalculator;
 
 public class CalculatorTest {
-	
-	
 	@Test(description="Testing For Empty String")
 	public void emptyStringChecker() {
 		Assert.assertEquals(0,StringCalculator.add(""));

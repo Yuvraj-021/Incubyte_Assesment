@@ -6,15 +6,13 @@ import org.testng.annotations.Test;
 import calculator.StringCalculator;
 
 public class CalculatorTest {
-	
-	
 	@Test(description="Testing For Empty String")
 	public void emptyStringChecker() {
 		Assert.assertEquals(0,StringCalculator.add(""));
 	}
 	
-	@Test(description="Testing for the addition of multiple Numbers")
+	@Test(description="Testing For Empty String")
 	public void numberAdditions() {
-		Assert.assertEquals(9,StringCalculator.add("4,2,3"));
+		Assert.assertEquals(6,StringCalculator.add("1,2,3"));
 	}
 }

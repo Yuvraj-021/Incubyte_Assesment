@@ -4,8 +4,6 @@ package calculator;
 
 public class StringCalculator {
 	
-	// Function: For calculating the sum of numbers if present in the string, if not returning 0.
-	
 	public static int add(String numbers) {
 		int result=0;
 		if(numbers.length()==0)
@@ -16,5 +14,6 @@ public class StringCalculator {
 			result+=Integer.parseInt(splitted_string[index]);
 		}
 		return result;
+		
 	}
 }
