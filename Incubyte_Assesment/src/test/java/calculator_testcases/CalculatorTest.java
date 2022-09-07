@@ -17,4 +17,9 @@ public class CalculatorTest {
 	public void numberAdditions() {
 		Assert.assertEquals(9,StringCalculator.add("4,2,3"));
 	}
+	
+	@Test(description="Testing for the addition of multiple Numbers")
+	public void numberAplhabetsAdditions() {
+		Assert.assertEquals(9,StringCalculator.add("1,2,3,a,b"));
+	}
 }

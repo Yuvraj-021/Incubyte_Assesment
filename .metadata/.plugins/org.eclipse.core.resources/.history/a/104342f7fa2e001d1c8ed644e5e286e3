@@ -1,0 +1,29 @@
+package calculator;
+
+import java.util.*;
+import java.lang.*;
+
+public class StringCalculator {
+	
+	// Function: For calculating the sum of numbers if present in the string, if not returning 0.
+	
+	public static int add(String numbers) {
+		int result=0;
+//		if(numbers.length()==0)
+//			return result;
+//		String[] splitted_string=numbers.split(",");
+//
+//		for(int index=0;index<splitted_string.length;index++) {
+//			if(splitted_string[index].matches("[a-z]")) {
+//				result += getNumericValue(splitted_string[index]);
+//			}
+//			result+=Integer.parseInt(splitted_string[index]);
+//		}
+		System.out.println('a'-'`');
+		return result;
+	}
+
+	private static int getNumericValue(char s) {
+		return s - "a";
+	}
+}
