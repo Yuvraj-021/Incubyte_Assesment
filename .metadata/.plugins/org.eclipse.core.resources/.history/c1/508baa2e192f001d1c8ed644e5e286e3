@@ -25,7 +25,7 @@ public class CalculatorTest {
 	
 	//TODO: For the addition of two Number in String it will return sum of them;
 	
-	@Test(description="Testing for the addition of two Numbers")
+	@Test(description="Testing for the addition of Multiple Numbers")
 	public void twoNumberAdditions() {
 		Assert.assertEquals(3,StringCalculator.add("1,2"));
 	}
@@ -47,7 +47,7 @@ public class CalculatorTest {
 	
 	//TODO: Throw exception for negative numbers;
 	
-	@Test(description="Throws Exception if negative number exists in input string")
+	@Test(description="Throws error if negative number exists in input string")
 	public void throwingNegativeNumberErrors() {
 		try {
 			StringCalculator.add("1,2,3,-4");
@@ -59,7 +59,7 @@ public class CalculatorTest {
 	
 	//TODO: Exception message should have negative number;
 	
-	@Test(description="Throws Exception message with negative numbers if negative number exists in input string")
+	@Test(description="Throws error if negative number exists in input string")
 	public void throwingForMultipleNegativeNumberErrors() {
 		try {
 			StringCalculator.add("1,2,3,-4,-5");
@@ -67,13 +67,4 @@ public class CalculatorTest {
 			Assert.assertEquals("negatives not allowed: -4 -5",e.getMessage());
 		}
 	}
-	
-	//TODO: For the Numbers Bigger than 1000 must be Ignored;
-	
-	@Test(description="Testing for the Number Bigger than 1000 ")
-	public void numberBiggerThan1000() {
-		Assert.assertEquals(3,StringCalculator.add("1,2,1003"));
-	}
-	
-	
 }

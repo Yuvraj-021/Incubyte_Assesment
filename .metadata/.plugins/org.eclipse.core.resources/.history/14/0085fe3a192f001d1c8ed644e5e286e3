@@ -52,7 +52,7 @@ public class StringCalculator {
 			      if (temp < 0) {
 			    	  negative_numbers.add(temp);
 			      }
-			      else if (temp < 1000) {
+			      else {
 			    	  string_summation.add(temp);
 			      }
 			}
