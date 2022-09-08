@@ -5,7 +5,7 @@
     <classes>
       <class name="calculator_testcases.CalculatorTest">
         <methods>
-          <include name="numberAdditionsAplhabets"/>
+          <include name="numberAdditions"/>
         </methods>
       </class> <!-- calculator_testcases.CalculatorTest -->
     </classes>

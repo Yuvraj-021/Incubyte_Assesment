@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\yuvra\AppData\Local\Temp\testng-eclipse--30741859\testng-customsuite.xml</span>
+                    <span>C:\Users\yuvra\AppData\Local\Temp\testng-eclipse--768986416\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="calculator_testcases.CalculatorTest" class="method navigator-link" hash-for-method="numberAdditionsAplhabets">numberAdditionsAplhabets</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="calculator_testcases.CalculatorTest" class="method navigator-link" hash-for-method="throwingNegativeNumberErrors">throwingNegativeNumberErrors</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,11 +127,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="numberAdditionsAplhabets">
-                  </a> <!-- numberAdditionsAplhabets -->
-                  <span class="method-name">numberAdditionsAplhabets</span>
+                  <a name="throwingNegativeNumberErrors">
+                  </a> <!-- throwingNegativeNumberErrors -->
+                  <span class="method-name">throwingNegativeNumberErrors</span>
                   <em>
-(Testing for the addition of multiple Numbers)                  </em>
+(Throws error if negative number exists in input string)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -139,7 +139,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\yuvra\AppData\Local\Temp\testng-eclipse--30741859\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\yuvra\AppData\Local\Temp\testng-eclipse--768986416\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -150,7 +150,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;calculator_testcases.CalculatorTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;numberAdditionsAplhabets&quot;/&gt;
+          &lt;include name=&quot;throwingNegativeNumberErrors&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- calculator_testcases.CalculatorTest --&gt;
     &lt;/classes&gt;
@@ -194,14 +194,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'numberAdditionsAplhabets')
+data.setCell(0, 1, 'throwingNegativeNumberErrors')
 data.setCell(0, 2, 'calculator_testcases.CalculatorTest')
-data.setCell(0, 3, 10);
+data.setCell(0, 3, 11);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 ms</span>
+              <span class="suite-total-time">Total running time: 11 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -216,15 +216,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">calculator_testcases.CalculatorTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">numberAdditions</span>
+                <span class="ignored-method-name">twoNumberAdditions</span>
+                <br/>
+                <span class="ignored-method-name">throwingForMultipleNegativeNumberErrors</span>
+                <br/>
+                <span class="ignored-method-name">multipleNumberAdditions</span>
                 <br/>
                 <span class="ignored-method-name">emptyStringChecker</span>
+                <br/>
+                <span class="ignored-method-name">numberAplhabetsAdditions</span>
+                <br/>
+                <span class="ignored-method-name">oneNumberAdditions</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -238,7 +246,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">calculator_testcases.CalculatorTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">numberAdditionsAplhabets</span>
+                <span class="method-name">throwingNegativeNumberErrors</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

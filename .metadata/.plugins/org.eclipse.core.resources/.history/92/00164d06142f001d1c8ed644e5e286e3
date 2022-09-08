@@ -1,0 +1,31 @@
+package calculator_testcases;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import calculator.StringCalculator;
+
+public class CalculatorTest {
+	
+	
+	@Test(description="Testing For Empty String")
+	public void emptyStringChecker() {
+		Assert.assertEquals(0,StringCalculator.add(""));
+	}
+	
+	@Test(description="Testing for the addition of multiple Numbers")
+	public void numberAdditions() {
+		Assert.assertEquals(9,StringCalculator.add("4,2,3"));
+	}
+	
+	@Test(description="Testing for the addition of multiple Numbers and Alphabets")
+	public void numberAplhabetsAdditions() {
+		Assert.assertEquals(9,StringCalculator.add("1,2,3,a,b"));
+	}
+	
+	@Test(description="Throws error if negative number exists in input string",expectedExceptions= {AssertionError.class,IllegalArgumentException.class})
+	public void throwingNegativeNumberErrors() throws Exception {
+		StringCalculator.add("1,2,3,-4");
+		throw new IllegalArgumentException("Negatives not allowed -4");
+	}
+}
